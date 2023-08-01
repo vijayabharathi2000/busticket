@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="noindex", initial-scale=1.0">
+    <title>Book your ticket</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="bus-container">
+        <i class="fa-solid fa-bars"></i>
+        <label >Pick a bus</label>
+        <select id="bus">
+            <option value="1000">chennai-trichy</option>
+            <option value="1500">chennai-Madurai</option>
+            <option value="1200">chennai-Coimbatore</option>
+            <option value="1800">chennai-kochin</option>
+        </select>
+    </div>
+    <ul class="showcase">
+        <li>
+            <div class="seat"></div>
+            <small>Available</small>
+        </li>
+        <li>
+            <div class="seat female"></div>
+            <small>Female only</small>
+        </li>
+        <li>
+            <div class="seat selected"></div>
+            <small>Selected by you</small>
+        </li>
+        <li>
+            <div class="seat booked"></div>
+            <small>Booked</small>
+        </li>
+    </ul>
+    <div class="container">
+        <div class="lower">
+            <h4>Lower deck</h3>
+            <hr>
+            <div class="row">
+                <div class="seat selected"></div>
+                <div class="seat"></div>
+                <div class="seat female"></div>
+            </div>
+            <div class="row">
+                <div class="seat female"></div>
+                <div class="seat booked"></div>
+                <div class="seat booked"></div>
+            </div>
+            <div class="row">
+                <div class="seat booked"></div>
+                <div class="seat booked"></div>
+                <div class="seat female"></div>
+            </div>
+            <div class="row">
+                <div class="seat bookedbyfemale"></div>
+                <div class="seat"></div>
+                <div class="seat bookedbyfemale"></div>
+            </div>
+            <div class="row">
+                <div class="seat booked"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+            </div>
+        </div>
+        <div class="upper">
+            <h4>Upper deck</h3>
+            <hr>
+            <div class="row">
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat female"></div>
+            </div>
+            <div class="row">
+                <div class="seat female"></div>
+                <div class="seat booked"></div>
+                <div class="seat booked"></div>
+            </div>
+            <div class="row">
+                <div class="seat booked"></div>
+                <div class="seat booked"></div>
+                <div class="seat female"></div>
+            </div>
+            <div class="row">
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+            </div>
+            <div class="row">
+                <div class="seat booked"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+            </div>
+        </div>
+    </div><br>
+    <div class="selection">
+        <p>Total Seats <span id="count">0</span><span id="seats"></span></p>
+        <p>Rs <span id="amount">0</span></p>
+        <button class="btn">continue</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

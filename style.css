@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.fa-bars{
+    font-size: 1rem;
+    cursor: pointer;
+}
+.seat{
+    background-color:white;
+    margin: 2px;
+    height: 25px;
+    width: 20px;
+    border: 1px solid lightgreen;
+    border-top-left-radius: 10px;
+    border-top-right-radius:10px;
+    margin-top: 10px;
+}
+.row{
+    display: flex;
+}
+.bus-container{
+    margin: 20px 0;
+}
+.bus-container select{
+    border: 0;
+    border-radius: 5px;
+    margin-left: 10px;
+    font-size: 14px;
+    padding: 5px 15px 5px 15px;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+}
+.seat.selected{
+    border: 1px solid darkgreen;
+    background-color: darkgreen;
+}
+.seat.booked{
+    border: 1px solid gainsboro;
+    background-color: gainsboro;
+}
+.seat.female{
+    border: 1px solid pink;
+}
+.seat:nth-of-type(1){
+    margin-right: 18px;
+}
+.container{
+    display: flex;
+    gap: 2rem;
+}
+.container h4{
+    font-weight: bold;
+    color: gainsboro;
+}
+.container .lower{
+    border: 1px solid black;
+    padding:10px;
+}
+.container .upper{
+    border: 1px solid black;
+    padding:10px;
+}
+.showcase{
+    position: fixed;
+    color: gray;
+    border: 1px solid black;
+    padding: 15px;
+    margin: 10px;
+    display: flex;
+    top: -120%;
+    left: 0;
+    list-style: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between
+}
+.showcase li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px;
+}
+.showcase.active{
+    top: 15rem;
+    left: 20rem;
+}
+.selection{
+    border: 1px solid black;
+    width: 20%;
+    display: block;
+    margin: 10px;
+}
+.selection .btn{
+    background-color: blue;
+    width:100%;
+    font-size: 14px;
+}
+.selection p span{
+    color: blue;
+}
+.seat:not(.booked):hover{
+    cursor: pointer;
+    transform: scale3d(1.2);
+}
